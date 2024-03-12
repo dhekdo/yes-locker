@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="360" height="72" viewBox="0 0 360 72">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_964" data-name="사각형 964" width="360" height="72" transform="translate(720 1554)" fill="none"/>
+    </clipPath>
+    <filter id="패스_42856" x="-22.5" y="-17.5" width="405" height="51" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#fecb24" flood-opacity="0.502"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="마스크_그룹_12" data-name="마스크 그룹 12" transform="translate(-720 -1554)" clip-path="url(#clip-path)">
+    <g id="그룹_9518" data-name="그룹 9518">
+      <rect id="사각형_861" data-name="사각형 861" width="360" height="179" transform="translate(720 1557)" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 720, 1554)" filter="url(#패스_42856)">
+      <path id="패스_42856-2" data-name="패스 42856" d="M-471-18197.2h360" transform="translate(471 18200.2)" fill="none" stroke="#fecb24" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

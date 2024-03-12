@@ -1,0 +1,45 @@
+@import "common", "main_top", "popup";
+
+.main {
+    margin: 1.5rem 1.45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+
+
+    // .pay_select {
+        
+    //     ul {
+
+    //         li {
+    //             width: 100%;
+    //             border: 1px solid #B7B7B7;
+    //             border-radius: 10px;
+    //             padding: 0.75rem 0.95rem;
+    //             display: flex;
+    //             justify-content: space-between;
+    //             align-items: center;
+
+    //             &:not(:last-child) {
+    //                 margin-bottom: 0.5rem;
+    //             }
+
+    //             label {
+    //                 font-size: 0.65rem;
+    //             }
+
+    //             input {
+    //                 width: 0.6rem;
+    //                 height: 0.6rem;
+    //                 color: #919191;
+    //             }
+    //         }
+    //     }
+    // }
+
+    
+}
+
+
+

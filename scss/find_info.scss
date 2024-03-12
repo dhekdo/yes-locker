@@ -1,0 +1,60 @@
+@import "common", "popup", "keybord";
+
+.main {
+    margin: 1.5rem 1.45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    h3 {
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        font-size: 70px;
+        font-weight: 700;
+        color: #EB4E3D;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    >div {
+
+        input {
+            width: 100%;
+            @include inputstyle;
+
+            &::placeholder {
+                opacity: 0.2;
+            }
+
+            &.find_info_num {
+                width: 179px;
+            }
+        }
+
+        >div {
+
+            .find_info_text {
+                font-size: 49px;
+                font-weight: 600;
+                vertical-align: bottom;
+                margin-left: 35px;
+            }
+
+            &:first-child {
+                margin-bottom: 66px;
+            }
+        }
+
+        
+
+    }
+}
+
+

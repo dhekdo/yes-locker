@@ -1,0 +1,143 @@
+@import "common", "main_top";
+
+.main {
+    margin: 45px 82px;
+
+    .locker_wrap {
+
+
+        div {
+
+            &.locker_site {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+
+                .locker {
+                    display: flex;
+                    justify-content: center;
+                    margin: 1.7rem 0;
+                    position: relative;
+                    width: 100%;
+    
+                    ul {
+                        &:not(:last-child) {
+                            margin-right: 7px;
+                        }
+    
+                        &.view_wrap {
+
+    
+                            li {
+                                height: 246px;
+                                width: 110px;
+                            }
+                        }
+    
+                        li {
+                            width: 84px;
+                            height: 112px;
+                            border: 0.5px solid #4A4A4A;
+                            margin: 7px 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 21px;
+                            font-weight: 500;
+    
+                            &:last-child {
+                                height: 246px;
+                            }
+    
+                            &.view {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                height: 231px;
+                                width: 110px;
+                                
+                                .view_circle {
+                                    width: 6px;
+                                    height: 7px;
+                                    background-color: #616161;
+                                    border-radius: 100%;
+                                }
+    
+                                .view_img {
+                                    width: 50px;
+                                    height: 95px;
+                                    background-color: #616161;
+                                    border-radius: 2px;
+                                    margin: 20px 0 10px;
+                                }
+    
+                                .view_line {
+                                    margin-left: 20px;
+    
+                                    span {
+                                        display: inline-block;
+                                        width: 16px;
+                                        height: 7px;
+                                        background-color: #616161;
+
+                                        &:last-child {
+                                            width: 26px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &.use {
+                                background-color: #CCCCCC;
+                                opacity: 0.2;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    .color_box {
+
+        ul {
+            display: flex;
+            justify-content: left;
+            margin-top: 166px;
+
+
+            li {
+                display: flex;
+                align-items: center;
+
+                &:not(:last-child) {
+                    margin-right: 54px;
+                }
+
+                span {
+                    font-size: 25px;
+
+                    &:first-child {
+                        display: inline-block;
+                        width: 33px;
+                        height: 33px;
+                        border: 0.5px solid #000;
+                        margin-right: 11px;
+
+                        &.color_y {
+                            background-color: #FECB24;
+                            border: none;
+                        }
+
+                        &.color_g {
+                            background-color: #D8D7D7;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

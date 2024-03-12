@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="112.5" height="117" viewBox="0 0 112.5 117">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_971" data-name="사각형 971" width="112.5" height="117" transform="translate(131 482)" fill="none" opacity="0.3"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f56555"/>
+      <stop offset="1" stop-color="#eb4e3d"/>
+    </linearGradient>
+    <filter id="패스_42925" x="7.471" y="13.091" width="104.058" height="103.058" filterUnits="userSpaceOnUse">
+      <feOffset dx="3" dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-color="#eb4e3d" flood-opacity="0.498"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="마스크_그룹_19" data-name="마스크 그룹 19" transform="translate(-131 -482)" clip-path="url(#clip-path)">
+    <g id="그룹_9495" data-name="그룹 9495" transform="translate(148 501)">
+      <rect id="사각형_827" data-name="사각형 827" width="79" height="79" rx="20" transform="translate(0)" fill="#fbdbd8"/>
+      <g transform="matrix(1, 0, 0, 1, -17, -19)" filter="url(#패스_42925)">
+        <path id="패스_42925-2" data-name="패스 42925" d="M367.029,503.5a21.535,21.535,0,1,0,22.029,21.529A21.783,21.783,0,0,0,367.029,503.5Z" transform="translate(-310.53 -466.41)" fill="url(#linear-gradient)"/>
+      </g>
+      <g id="그룹_9494" data-name="그룹 9494" transform="translate(38.74 26.02)">
+        <line id="선_39" data-name="선 39" x2="12.315" transform="translate(0 16.231)" fill="none" stroke="#fff" stroke-width="4"/>
+        <line id="선_40" data-name="선 40" y2="18.231" fill="none" stroke="#fff" stroke-width="4"/>
+      </g>
+    </g>
+    <rect id="사각형_1004" data-name="사각형 1004" width="17" height="19" transform="translate(131 482)" fill="none"/>
+  </g>
+</svg>

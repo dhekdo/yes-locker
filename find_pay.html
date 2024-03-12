@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- 폰트 -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'lzb0icn',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+      <!-- 폰트 끝 -->
+    <link rel="stylesheet" href="./css/pay.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header>
+            <button class="home_bt">
+                <img src="./img/home_bt.svg" alt="홈버튼">
+            </button>
+            <div class="title_box">
+                
+                <div class="text_box">
+                    <h5 class="blue_text red_text">물품 찾기</h5>
+                    <h1 class="title">
+                        결제수단을<br>선택해주세요
+                    </h1>
+                </div>
+                <div class="img_box">
+                    <img src="./img/title_img2.png" alt="타이틀이미지">
+                </div>
+
+            </div>
+        </header>
+
+        <!-- 메인 -->
+        <div class="main">
+            <div class="main_top pay_top">
+                <div>
+                    <div>
+                        <img src="./img/pay_icon1.svg" alt="박스이미지">
+                        <h6 class="top_text_red">초과 시간</h6>
+                    </div>
+                    <div class="main_text_box">
+                        
+                        <span class="data_num">1&nbsp;</span><span>시간</span>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="./img/pay_icon2.svg" alt="박스이미지">
+                        <h6 class="top_text_yel">초과 요금</h6>
+                    </div>
+                    <div class="main_text_box">
+                        
+                        <span class="data_num">1000&nbsp;</span><span>원</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pay_select">
+                <ul>
+                    <li>
+                        <label for="credit_pay">
+                            Credit Card  
+                        </label>
+                        <input type="radio" name="pay" id="credit_pay" value="credit">
+                    </li>
+                    <li>
+                        <label for="momo_pay">
+                            MoMo
+                        </label>
+                        <input type="radio" name="pay" id="momo_pay" value="momo">
+                    </li>
+                    <li>
+                        <label for="zalo_pay">
+                            Zalo Pay
+                        </label>
+                        <input type="radio" name="pay" id="zalo_pay" value="zalo">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="line_wrap blue_line_wrap">
+                <img src="./img/blue_wrap_mo.svg" alt="라인">
+                <div>
+                    <button class="back_bt">이전</button>
+                    <button class="wait_bt next_bt" onclick="popupInfoEnterOpen();">선택</button>   
+                </div>
+            </div>
+            <div class="footer_info">
+                <ul>
+                    <li>개인정보 취급 방침</li>
+                    <li>
+                        사업자등록번호 : 204-86-29073
+                        <br>서울시 마포구 창전로 70 화수목빌딩
+                    </li>
+                    <li>Copyright © 2020 SMART CUBE. All rights reserved.</li>
+                </ul>
+                <div class="sc_logo">
+                    <img src="./img/sc_logo.png" alt="로고">
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="popup_info_enter popup_wrap popup_reservation">
+        <div class="bg"></div>
+        <div class="popup_box">
+            <div class="popup_title">
+                <p>함 열기</p>
+            </div>
+            <div class="popup_text">
+                <p>20번 함을 여시겠습니까?</p>
+            </div>
+            <div class="bt_wrap">
+                <button class="no_bt">취소</button>
+                <button class="yes_bt" onclick="home();">확인</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/pay.js"></script>
+    <script src="./js/common.js"></script>
+</body>
+
+</html>

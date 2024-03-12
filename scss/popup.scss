@@ -1,0 +1,164 @@
+@import "common";
+
+.popup_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -99;
+    backdrop-filter: blur(26px);
+    // display: none;
+    transition: all 0.3s;
+    opacity: 0;
+
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+        background-color: #000;
+        opacity: 0.07;
+        
+    }
+
+    .popup_box {
+        width: 850px;
+        height: 1240px;
+        margin: 0 auto;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 15px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        box-shadow: 6px 6px 27px #00000026;
+        z-index: 99;
+        overflow: hidden;
+        transition: all 0.3s;
+
+        .popup_title {
+            padding: 60px;
+
+            p {
+                text-align: center;
+                font-size: 45px;
+                color: $maincolor;
+                font-weight: 600;
+                letter-spacing: -1.5px;
+            }
+        }
+
+        .popup_text {
+            padding: 30px 60px;
+            overflow-y: scroll;
+
+            &::-webkit-scrollbar {
+                display: none;
+            }
+
+            span {
+                font-size: 25px;
+                
+            }
+            
+        }
+
+        .bt_wrap {
+            display: flex;
+            padding: 60px 0 0;
+            
+            button {
+                width: 50%;
+                padding: 40px 0;
+                font-size: 40px;
+                font-weight: 600;
+                color: #fff;
+                background-color: #C4C4C4;
+
+                &.yes_bt {
+                    background-color: $maincolor;
+                }
+            }
+        }
+    }
+
+   &.popup_info_enter {
+        opacity: 0;
+        transition: all 0.3s;
+        z-index: -99;
+
+        .popup_box {
+            width: 848px;
+            height: 760px;
+
+            .popup_title {
+                padding: 65px 0 50px
+            }
+
+            .popup_text {
+                padding: 0 1.5rem;
+
+                p {
+                    font-size: 35px;
+                    text-align: center;
+                    padding-bottom: 10px;
+                }
+
+                table {
+                    margin: 1rem auto 0;
+                    width: 85%;
+
+                    tr {
+
+                        td {
+                            font-size: 30px;
+                            padding: 20px 0;
+
+                            &:last-child {
+                                text-align: right;
+                                font-weight: 600;
+                                font-size: 35px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    &.popup_reservation {
+
+        .popup_box {
+            height: 466px;
+
+            .popup_text {
+                padding: 0;
+
+                strong {
+                    font-size: 35px;
+                    color: #EB4E3D;
+                }
+            }
+        }
+    }
+
+    &.popup_main {
+
+        .popup_box {
+            height: 631px;
+
+            .popup_text {
+                
+                p {
+                    line-height: 1.5;
+                }
+            }
+        }
+    }
+}

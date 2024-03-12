@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1081" height="70" viewBox="0 0 1081 70">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="사각형_965" data-name="사각형 965" width="1081" height="70" transform="translate(0 1554)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="패스_42854" x="-15" y="-10" width="1110.5" height="36" filterUnits="userSpaceOnUse">
+      <feOffset dy="5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#3379f5" flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="마스크_그룹_13" data-name="마스크 그룹 13" transform="translate(0 -1554)" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 0, 1554)" filter="url(#패스_42854)">
+      <path id="패스_42854-2" data-name="패스 42854" d="M-471-18197.2H609.5" transform="translate(471 18200.2)" fill="none" stroke="#3379f5" stroke-width="6"/>
+    </g>
+  </g>
+</svg>

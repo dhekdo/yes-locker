@@ -1,0 +1,37 @@
+@import "common", "popup";
+
+.lang_wrap {
+    
+    .lang_inner {
+        padding: 80px;
+        
+        button {
+            font-size: 30px;
+            font-weight: 500;
+
+            &:not(:last-child) {
+                margin-right: 63px;
+            }
+        }
+
+        .lang_on {
+            color: $maincolor;
+        }
+    }
+}
+
+.main {
+
+    .img_wrap {
+
+        div {
+            text-align: center;
+
+            &.main_img {
+                margin-top: 204.56px;
+            }
+        }
+    }
+}
+
+

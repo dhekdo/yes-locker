@@ -1,0 +1,52 @@
+@import "common";
+
+.keybord_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    >div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+
+        li {
+            width: 75px;
+            height: 65px;
+            border: 1px solid #B7B7B7;
+            font-size: 32px;
+            font-weight: 500;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:not(:last-child) {
+                margin-right: 6px;
+            }
+
+            &.long_key {
+                width: 155px;
+                font-size: 30px;
+
+                &.enter_key {
+                    margin-right: -37px;
+                    margin-left: 44px;
+                }
+
+                img {
+                    position: static;
+                }
+            }
+        }
+    }
+}
+

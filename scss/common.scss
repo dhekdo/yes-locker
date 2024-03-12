@@ -1,0 +1,240 @@
+$maincolor :#3379F5;
+
+@mixin inputstyle {
+    height: 100px;
+    background-color: #FCFCFC;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    box-shadow: inset 0px 0px 8px #00000012;
+    padding: 30px 50px;
+    font-size: 30px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: 'pretendard', 'sans-serif'; //레귤러(m-500,semi-600)
+    font-style: normal;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+.wrap {
+    width: 1080px;
+    height: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .main {
+        height: 100%;
+        margin: 45px 85px;
+    }
+}
+
+button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    
+}
+
+
+// 헤더
+header {
+    padding: 35px 30px 0 80px;
+    position: relative;
+
+    button {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform:  translateX(-50%);
+    }
+
+    .title_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .text_box {
+
+            h5 {
+                font-size: 40px;
+
+                &.blue_text {
+                    color: $maincolor;
+                }
+
+                &.red_text {
+                    color: #EB4E3D;
+                }
+
+                &.yel_text {
+                    color: #FFBB00;
+                }
+            }
+
+            h1 {
+                font-size: 70px;
+                font-weight: 700;
+                margin-top: 12px;
+            }
+        }
+    }
+}
+// 헤더 끝
+
+// 푸터
+footer {
+    
+    // margin-top: 83.94px;
+
+    .line_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%; 
+        height: 179px;
+
+
+        h2 {
+            font-size: 38px;
+            font-weight: 600;
+            text-align: center;
+            width: 100%;
+        }
+
+        >div {
+            display: flex;
+            width: 33.333%;
+            position: relative;
+            align-items: center;
+            
+            img {
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            button {
+                width: 50%;
+                font-size: 38px;
+                font-weight: 600;
+
+                &.wait_bt {
+                    background-color: #F5F5F5;
+                    color: #CCCCCC;
+                }
+
+                &.bt_on {
+                    background-color: #F3F7FF;
+                    color: #3379F5;
+                }
+
+            }
+        }
+    }
+
+    .blue_line_wrap {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        
+        &.keybord_wrap {
+            height: 570px;
+
+            .keybord_box {
+                height: 390px;
+            }
+        }
+
+        >img {
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        div {
+            width: 100%;
+            height: 179px;
+            display: flex;
+            align-self: flex-end;
+
+            img {
+                width: 100%;
+            }
+
+
+            button {
+                height: 100%;
+                font-size: 38px;
+                font-weight: 600;
+                text-align: center;
+                width: 50%;
+                height: 100%;
+                // background-color: #fff;
+
+                &.full_bt {
+                    width: 100%;
+                    background-color: #F3F7FF;
+                    color: $maincolor;
+                }
+            }
+        }
+        
+    }
+
+    .footer_info {
+        height: 184px;
+        background-color: #EEEEEE;
+        // margin-top: 68px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+        padding: 30px 40px;
+
+        li {
+            font-size: 23px;
+            font-weight: 500;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+
+            &:nth-child(2) {
+                font-size: 21px;
+                font-weight: 300;
+            }
+
+            &:last-child {
+                font-size: 18px;
+                font-weight: 300;
+            }
+        }
+
+        .sc_logo {
+            width: 150px;
+            height: 22px;
+            margin-right: 35px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
+// 푸터 끝
+
